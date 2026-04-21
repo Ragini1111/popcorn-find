@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Movie App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+<header>
+  <h1>🎬 Mini Movie App</h1>
+  <div class="controls">
+    <input id="q" type="text" placeholder="Search movies (e.g. Inception)">
+    <select id="genre">
+      <option value="">All Genres</option>
+      <option>Action</option>
+      <option>Comedy</option>
+      <option>Drama</option>
+      <option>Sci-Fi</option>
+      <option>Thriller</option>
+      <option>Romance</option>
+      <option>Animation</option>
+    </select>
+    <button id="searchBtn">Search</button>
+    <button id="themeBtn">🌙</button>
+  </div>
+  <div class="tabs">
+    <button id="tabSearch" class="active">Search</button>
+    <button id="tabFav">Favorites</button>
+  </div>
+</header>
+
+<div class="container">
+  <div id="results" class="grid"></div>
+  <div id="message" class="msg">Search for a movie to get started</div>
+</div>
+
+<!-- Details Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button class="close" id="closeModal">×</button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+</body>
+</html>
+<script src="script.js"></script>
